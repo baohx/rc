@@ -14,3 +14,11 @@ fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 ----
 http://cssor.com/save-and-restore-tmux-session-for-computer-reboot.html
+----
+apt-get install libssl-dev openssl
+sudo rm -rf python
+sudo ln -s /usr/local/Python-3.3.2/bin/python3 ./python
+cd Python-3.3.2/  
+./configure --prefix=/usr/local/Python-3.3.2/  
+sudo make  
+sudo make install
